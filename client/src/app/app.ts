@@ -52,7 +52,7 @@ export class App {
       id: 'yieldwerx',
       company: 'YieldWerx Semiconductor',
       role: 'Senior Software Engineer',
-      period: 'Dec 2025 – Present',
+      period: 'Dec 2024 – Present',
       location: 'Lahore, Pakistan',
       summary:
         'Leading .NET-based semiconductor yield analysis systems with ML-driven analytics and interactive dashboards for high-volume manufacturing.',
