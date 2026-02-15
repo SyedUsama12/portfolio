@@ -270,18 +270,23 @@ readonly summary =
         'CockroachDB',
       ],
     },
-    {
-      name: 'AI, ML & Agentic Systems',
-      keywords: [
-        'Python',
-        'Machine Learning',
-        'LangChain',
-        'NLP',
-        'Recommendation Systems',
-        'TensorFlow',
-        'Data Science',
-      ],
-    },
+   {
+  name: 'AI, ML & Agentic Systems',
+  keywords: [
+    'Python',
+    'LangChain',
+    'LangGraph',
+    'FastAPI',
+    'Conversational AI',
+    'AI Middleware',
+    'Tool Orchestration',
+    'Machine Learning',
+    'NLP',
+    'Production ML Integration',
+    'Generative AI'
+  ],
+},
+
     {
       name: 'Cloud & DevOps',
       keywords: ['Azure', 'AWS', 'CI/CD', 'Git', 'Agile / Scrum'],
