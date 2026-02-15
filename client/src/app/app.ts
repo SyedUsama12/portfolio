@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { DOCUMENT } from '@angular/common';
 
 type ExperienceId = 'yieldwerx' | 'netsol' | 'gicoh' | 'techverx' | 'intern';
-type AiProjectId = 'yield-ai-agent' | 'fintech-agent' | 'ml-portfolio';
+type AiProjectId = 'yield-ai-agent' | 'fintech-agent' | 'ml-portfolio' | 'chat-api-layer';
 
 interface Experience {
   id: ExperienceId;
@@ -44,8 +44,8 @@ export class App {
   readonly location = 'Lahore, Pakistan · Remote Friendly';
   readonly currentYear = new Date().getFullYear();
 
-  readonly summary =
-    'Full Stack .NET Developer with 5+ years of experience building enterprise-grade web and desktop applications in FinTech, Semiconductor Yield Testing, and Retail. I specialize in ASP.NET Core, Angular, SQL Server, and production-grade AI/ML integration using Python, LangChain, and modern cloud tooling.';
+readonly summary =
+  'Senior Full Stack .NET engineer with 5+ years delivering enterprise systems across FinTech, semiconductor analytics, and retail platforms. I design AI layers that sit on top of traditional APIs, enabling chat-driven workflows, intelligent automation, and decision support without replacing core backend systems. My work combines ASP.NET Core, Angular, SQL Server, and Python-based AI tooling (LangChain, ML pipelines) to transform rigid UI flows into conversational, context-aware experiences that integrate seamlessly with production architectures.';
 
   readonly experiences: Experience[] = [
     {
@@ -56,12 +56,15 @@ export class App {
       location: 'Lahore, Pakistan',
       summary:
         'Leading .NET-based semiconductor yield analysis systems with ML-driven analytics and interactive dashboards for high-volume manufacturing.',
-      highlights: [
+           highlights: [
         'Designed complex yield dashboards with MS Chart Controls, defect maps, and trend analytics for wafer fabrication engineers.',
         'Optimized large-scale SQL queries and multi-threaded data processing for near real-time yield calculations.',
         'Integrated predictive yield models built in Python / ML frameworks into production .NET workflows.',
+        'Built an AI middleware layer that converts engineer queries into structured API calls, enabling conversational access to yield datasets.',
+        'Implemented chat-driven anomaly exploration where users request insights in natural language instead of navigating multi-step UI filters.',
         'Automated PDF/Excel reporting pipelines, cutting manual analysis time by ~30%.',
       ],
+
       stack: [
         '.NET Core',
         'C#',
@@ -210,6 +213,26 @@ export class App {
       agenticAngle:
         'Provides a library of ready-to-use tools that can be wrapped by higher-level agents for pricing, forecasting, and spam / resume classification.',
     },
+    {
+  id: 'chat-api-layer',
+  name: 'Conversational API Orchestration Layer',
+  domain: 'Enterprise Systems · AI Middleware',
+  summary:
+    'A production-minded AI layer that sits between Angular UI and .NET APIs, allowing users to interact through chat instead of traditional forms.',
+  impact:
+    'Reduced navigation complexity and enabled faster access to analytics by converting natural language queries into validated API workflows.',
+  tech: [
+    'Python',
+    'LangChain',
+    'FastAPI',
+    'ASP.NET Core',
+    'Angular',
+    'SQL Server',
+  ],
+  agenticAngle:
+    'An orchestrator agent selects tools such as API callers, data validators, and summarizers to execute multi-step workflows from a single user message.',
+},
+
   ];
 
   readonly skillCategories: SkillCategory[] = [
